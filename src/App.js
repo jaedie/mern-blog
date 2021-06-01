@@ -1,5 +1,5 @@
 import "./dist/css/App.css";
-import Nav from "./Nav/Nav";
+import Nav from "./Components/Nav";
 import Home from "./Pages/Home";
 
 function App() {

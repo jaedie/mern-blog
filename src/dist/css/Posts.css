@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=Posts.css.map */
+.posts {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  margin: 20px 0 20px 20px;
+  padding: 20px;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px 30px;
+}
+/*# sourceMappingURL=Posts.css.map */

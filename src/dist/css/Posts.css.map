@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,IAAI,EAAE,CAAC;EACP,MAAM,EAAE,gBAAgB;EACxB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;EAC9B,GAAG,EAAE,SAAS;CACf",
     "sources": [
         "../../Components/Posts.scss"
     ],

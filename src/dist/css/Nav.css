@@ -1,11 +1,10 @@
-.nav {
+.nav, .nav__contrast {
   width: 100%;
   height: 50px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 10px;
-  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,9 +12,18 @@
       -ms-flex-align: center;
           align-items: center;
   font-family: "Josefin Sans", sans-serif;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.nav .react-icons {
+.nav__contrast {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: #e49f31;
+}
+
+.nav .react-icons, .nav__contrast .react-icons {
   font-size: 20px;
   margin-right: 10px;
   color: #444;

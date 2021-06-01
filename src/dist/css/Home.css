@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=Home.css.map */
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=Home.css.map */

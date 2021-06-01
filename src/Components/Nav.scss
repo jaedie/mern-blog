@@ -4,10 +4,17 @@
   position: sticky;
   top: 0;
   padding: 10px;
-  margin-top: 10px;
   display: flex;
   align-items: center;
   font-family: "Josefin Sans", sans-serif;
+  z-index: 1;
+  transition: all 0.5s;
+
+  &__contrast {
+    @extend .nav;
+    transition: all 1s ease;
+    background-color: #e49f31;
+  }
 
   .react-icons {
     font-size: 20px;

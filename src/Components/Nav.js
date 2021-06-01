@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../dist/css/Nav.css";
 import { IconContext } from "react-icons";
-
 import {
   FaGithub,
   FaInstagram,
@@ -12,10 +11,22 @@ import {
 
 function Nav() {
   const navlist = ["Home", "About", "Contact", "Write", "Sign-In"];
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 80) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    // return () => {
+    //   window.removeEventListener("scroll");
+    // };
+  }, []);
 
   return (
     <IconContext.Provider value={{ className: "react-icons" }}>
-      <div className="nav">
+      <div className={`nav ${show && "nav__contrast"}`}>
         <div className="nav__topLeft">
           <FaGoogle />
           <FaGithub />

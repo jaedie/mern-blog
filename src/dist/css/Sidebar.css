@@ -1,1 +1,98 @@
-/* No CSS *//*# sourceMappingURL=Sidebar.css.map */
+.sidebar {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+}
+
+.sidebar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar__item__title {
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  border-top: 1px solid #a7a4a4;
+  border-bottom: 1px solid #a7a4a4;
+  font-family: "Varela Round", sans-serif;
+  color: #222;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+
+.sidebar__item__img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 10%;
+     object-position: 0% 10%;
+  border-radius: 5px;
+}
+
+.sidebar__item__des {
+  width: 80%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+}
+
+.sidebar__item__lists {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 0.5rem;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.sidebar__item__lists > li {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.sidebar__item__social {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar__item__social__icon {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.sidebar__item__social :last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=Sidebar.css.map */
