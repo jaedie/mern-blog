@@ -33,7 +33,7 @@ function Nav() {
           <img
             className="nav__topRight__profile"
             src="/images/profile_img.png"
-            alt=""
+            alt="profile_image"
           />
           <FaSearch style={{ fontSize: "18px", color: "#666" }} />
         </div>

@@ -1,1 +1,48 @@
-/* No CSS *//*# sourceMappingURL=Header.css.map */
+.header {
+  width: 100%;
+  position: relative;
+  margin-top: 3%;
+}
+
+.header__titles {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 38%;
+  right: 38%;
+  top: 2.5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lora", serif;
+  font-weight: 300;
+  color: #444;
+}
+
+.header__titles__sm {
+  width: 120px;
+  font-size: 20px;
+}
+
+.header__titles__lg {
+  font-size: 100px;
+  margin-top: -25px;
+}
+
+.header__img {
+  width: 100%;
+  height: 450px;
+  margin-top: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=Header.css.map */
