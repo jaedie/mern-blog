@@ -1,0 +1,67 @@
+.write {
+  padding-top: 50px;
+
+  &__container {
+    position: relative;
+    width: 70vw;
+    margin: auto;
+  }
+
+  &__img {
+    width: 70vw;
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  &__form {
+    width: auto;
+    &__group {
+      display: flex;
+      align-items: center;
+
+      &__icon {
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        border-radius: 50%;
+        border: 1px solid;
+        color: rgb(121, 118, 118);
+        cursor: pointer;
+      }
+
+      &__title {
+        width: 57vw;
+        font-size: 30px;
+        border: none;
+        padding: 20px;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &__text {
+        @extend .write__form__group__title;
+        font-size: 20px;
+        width: 70vw;
+        resize: none;
+        &:focus {
+          box-shadow: 0 0 1px 0 rgb(95, 95, 95);
+        }
+      }
+    }
+
+    & > button {
+      position: absolute;
+      top: 105%;
+      right: 1%;
+      border: none;
+      border-radius: 9px;
+      font-size: 16px;
+      padding: 10px;
+      color: #fff;
+      background-color: #e49f31;
+      cursor: pointer;
+    }
+  }
+}

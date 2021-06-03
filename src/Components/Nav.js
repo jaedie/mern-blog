@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../dist/css/Nav.css";
+import { NavLink } from "react-router-dom";
 import { IconContext } from "react-icons";
 import {
   FaGithub,
@@ -10,7 +11,6 @@ import {
 } from "react-icons/fa";
 
 function Nav() {
-  const navlist = ["Home", "About", "Contact", "Write", "Sign-In"];
   const [show, handleShow] = useState(false);
 
   useEffect(() => {
@@ -24,6 +24,10 @@ function Nav() {
     // };
   }, []);
 
+  const activeStyle = {
+    fontWeight: "bold",
+  };
+
   return (
     <IconContext.Provider value={{ className: "react-icons" }}>
       <div className={`nav ${show && "nav__contrast"}`}>
@@ -35,9 +39,37 @@ function Nav() {
         </div>
         <div className="nav__topCenter">
           <ul className="nav__topCenter__lists">
-            {navlist.map((list, idx) => (
-              <li key={idx}>{list}</li>
-            ))}
+            <NavLink className="nav__topCenter__list" to="/">
+              HOME
+            </NavLink>
+            <NavLink
+              className="nav__topCenter__list"
+              to="/about"
+              activeStyle={activeStyle}
+            >
+              ABOUT
+            </NavLink>
+            <NavLink
+              className="nav__topCenter__list"
+              to="/contact"
+              activeStyle={activeStyle}
+            >
+              CONTACT
+            </NavLink>
+            <NavLink
+              className="nav__topCenter__list"
+              to="/write"
+              activeStyle={activeStyle}
+            >
+              WRITE
+            </NavLink>
+            <NavLink
+              className="nav__topCenter__list"
+              to="/signin"
+              activeStyle={activeStyle}
+            >
+              SIGN-IN
+            </NavLink>
           </ul>
         </div>
         <div className="nav__topRight">

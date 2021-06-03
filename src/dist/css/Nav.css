@@ -65,11 +65,13 @@
   list-style: none;
 }
 
-.nav__topCenter__lists > li {
+.nav__topCenter__list {
+  color: black;
   margin-right: 20px;
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav__topRight {

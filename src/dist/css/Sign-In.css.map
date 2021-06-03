@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../Pages/Sign-In.scss"
+    ],
+    "names": [],
+    "file": "Sign-In.css"
+}
