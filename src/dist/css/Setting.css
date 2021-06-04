@@ -1,0 +1,132 @@
+.setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.setting__wrap {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  padding: 20px;
+}
+
+.setting__title {
+  font-family: "Josefin Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.setting__title__update {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: lightcoral;
+}
+
+.setting__title__delete {
+  font-size: 13px;
+  color: red;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.setting__title__delete:hover {
+  color: #fff;
+  background-color: red;
+}
+
+.setting__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.setting__form > label {
+  width: 90px;
+}
+
+.setting__form__profile__img {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  cursor: pointer;
+}
+
+.setting__form__img__input {
+  display: none;
+}
+
+.setting__form__PP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.setting__form__PP > label {
+  width: auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.setting__form__PP > input {
+  width: 30%;
+  color: gray;
+  height: 30px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.setting__form__PP > input:focus {
+  outline: none;
+}
+
+.setting__form__PP > button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  width: 150px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  color: coral;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.setting__form__PP > button:hover {
+  color: #fff;
+  background-color: coral;
+}
+/*# sourceMappingURL=Setting.css.map */

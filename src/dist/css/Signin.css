@@ -1,1 +1,106 @@
-/* No CSS *//*# sourceMappingURL=Signin.css.map */
+.signin {
+  margin-top: -100px;
+  height: 105vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), color-stop(rgba(255, 255, 255, 0.5)), to(white)), url("/src/Images/signin_img.jpg") no-repeat;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), white), url("/src/Images/signin_img.jpg") no-repeat;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.signin__title {
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+.signin__form {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.signin__form > label {
+  margin: 10px 0;
+}
+
+.signin__form > input {
+  color: gray;
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.signin__form > input:focus {
+  outline: none;
+}
+
+.signin__form > input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.signin__form > input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.signin__form > input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.signin__form > input:focus::placeholder {
+  color: transparent;
+}
+
+.signin__form .button__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signin__form .signinBtn, .signin__form .registerBtn {
+  width: 40%;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  color: lightcoral;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.signin__form .signinBtn:hover, .signin__form .registerBtn:hover {
+  color: white;
+  background-color: lightcoral;
+}
+
+.signin__form .registerBtn {
+  width: 12vw;
+  color: teal;
+}
+
+.signin__form .registerBtn:hover {
+  color: white;
+  background-color: teal;
+}
+/*# sourceMappingURL=Signin.css.map */

@@ -1,12 +1,13 @@
 import React from "react";
 import "../dist/css/Write.css";
 import { FaPlus } from "react-icons/fa";
+import writeImg from "../Images/write_img.jpg";
 
 function Write() {
   return (
     <div className="write">
       <div className="write__container">
-        <img src="/images/write_img.jpg" alt="" className="write__img" />
+        <img src={writeImg} alt="" className="write__img" />
         <form action="/write" className="write__form">
           <div className="write__form__group">
             <label htmlFor="fileInput">

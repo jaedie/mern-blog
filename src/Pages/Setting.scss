@@ -1,0 +1,103 @@
+.setting {
+  display: flex;
+
+  &__wrap {
+    flex: 9;
+    padding: 20px;
+  }
+
+  &__title {
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__update {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: lightcoral;
+    }
+
+    &__delete {
+      font-size: 13px;
+      color: red;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 10px;
+
+      &:hover {
+        color: #fff;
+        background-color: red;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    & > label {
+      width: 90px;
+    }
+
+    &__profile__img {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: bottom;
+      cursor: pointer;
+    }
+
+    &__img__input {
+      display: none;
+    }
+
+    &__PP {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      & > label {
+        width: auto;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+
+      & > input {
+        width: 30%;
+        color: gray;
+        height: 30px;
+        font-size: 15px;
+        border: none;
+        border-bottom: 1px solid lightgray;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      & > button {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 600;
+        width: 150px;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        color: coral;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: #fff;
+          background-color: coral;
+        }
+      }
+    }
+  }
+}

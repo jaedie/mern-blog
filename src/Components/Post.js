@@ -1,10 +1,11 @@
 import React from "react";
 import "../dist/css/Post.css";
+import post from "../Images/post1.png";
 
 function Post() {
   return (
     <div className="post">
-      <img className="post__img" src="/images/post1.png" alt="post_img" />
+      <img className="post__img" src={post} alt="post_img" />
       <div className="post__info">
         <div className="post__info__ctgs">
           <span className="post__info__ctg">Life</span>

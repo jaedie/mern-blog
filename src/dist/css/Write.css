@@ -11,6 +11,7 @@
 .write__img {
   width: 70vw;
   height: 250px;
+  border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom;

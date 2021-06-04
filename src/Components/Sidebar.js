@@ -2,6 +2,7 @@ import React from "react";
 import "../dist/css/Sidebar.css";
 import { IconContext } from "react-icons";
 import { FaGithub, FaInstagram, FaGoogle, FaLinkedin } from "react-icons/fa";
+import sidebarImg from "../Images/sidebar_about.png";
 
 function Sidebar() {
   const sidebar_list = ["Life", "Music", "Books", "Coding", "IT"];
@@ -10,11 +11,7 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar__item">
         <span className="sidebar__item__title">ABOUT ME</span>
-        <img
-          src="/images/sidebar_about.png"
-          alt=""
-          className="sidebar__item__img"
-        />
+        <img src={sidebarImg} alt="" className="sidebar__item__img" />
         <p className="sidebar__item__des">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ex
           alias nisi fugit nostrum sunt deleniti totam aliquam, natus est dolore

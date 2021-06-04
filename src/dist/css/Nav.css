@@ -1,10 +1,10 @@
-.nav, .nav__contrast {
+.nav, .nav__contrast, .nav__container, .nav__container__contrast {
   width: 100%;
-  height: 50px;
+  height: 60px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,22 +13,34 @@
           align-items: center;
   font-family: "Josefin Sans", sans-serif;
   z-index: 1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .nav__contrast {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  background-color: #e49f31;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d0a7a8), color-stop(#b49aa4), to(#636172));
+  background-image: linear-gradient(0deg, #d0a7a8, #b49aa4, #636172);
 }
 
-.nav .react-icons, .nav__contrast .react-icons {
+.nav__container, .nav__container__contrast {
+  position: absolute;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.nav__container__contrast {
+  background-color: transparent;
+}
+
+.nav .react-icons, .nav__contrast .react-icons, .nav__container .react-icons, .nav__container__contrast .react-icons, .nav .react-icons__contrast, .nav__contrast .react-icons__contrast, .nav__container .react-icons__contrast, .nav__container__contrast .react-icons__contrast {
   font-size: 20px;
   margin-right: 10px;
   color: #444;
   cursor: pointer;
   vertical-align: center;
+}
+
+.nav .react-icons__contrast, .nav__contrast .react-icons__contrast, .nav__container .react-icons__contrast, .nav__container__contrast .react-icons__contrast {
+  color: #fff;
 }
 
 .nav__topLeft {
@@ -65,13 +77,17 @@
   list-style: none;
 }
 
-.nav__topCenter__list {
-  color: black;
+.nav__topCenter__list, .nav__topCenter__list__contrast {
   margin-right: 20px;
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
   text-decoration: none;
+  color: black;
+}
+
+.nav__topCenter__list__contrast {
+  color: white;
 }
 
 .nav__topRight {
@@ -95,6 +111,10 @@
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 20px;
+  top: 2px;
+}
+
+.nav #search, .nav__contrast #search, .nav__container #search, .nav__container__contrast #search {
+  margin-left: 20px;
 }
 /*# sourceMappingURL=Nav.css.map */

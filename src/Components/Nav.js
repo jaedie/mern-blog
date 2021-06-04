@@ -9,13 +9,14 @@ import {
   FaLinkedin,
   FaSearch,
 } from "react-icons/fa";
+import profileImg from "../Images/profile_img.png";
 
 function Nav() {
   const [show, handleShow] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 80) {
+      if (window.scrollY > 10) {
         handleShow(true);
       } else handleShow(false);
     });
@@ -28,43 +29,83 @@ function Nav() {
     fontWeight: "bold",
   };
 
+  const settingActive = {
+    width: "46px",
+    height: "46px",
+    border: "3px solid #e49f31",
+    borderRadius: "50%",
+  };
+
   return (
-    <IconContext.Provider value={{ className: "react-icons" }}>
-      <div className={`nav ${show && "nav__contrast"}`}>
+    <div className={`${show ? "nav__contrast" : "nav"} `}>
+      <div
+        className={`${show ? "nav__container__contrast" : "nav__container"} `}
+      >
         <div className="nav__topLeft">
-          <FaGoogle />
-          <FaGithub />
-          <FaLinkedin />
-          <FaInstagram />
+          <FaGoogle
+            className={`${!show ? "react-icons" : "react-icons__contrast"}`}
+          />
+          <FaGithub
+            className={`${!show ? "react-icons" : "react-icons__contrast"}`}
+          />
+          <FaLinkedin
+            className={`${!show ? "react-icons" : "react-icons__contrast"}`}
+          />
+          <FaInstagram
+            className={`${!show ? "react-icons" : "react-icons__contrast"}`}
+          />
         </div>
         <div className="nav__topCenter">
           <ul className="nav__topCenter__lists">
-            <NavLink className="nav__topCenter__list" to="/">
+            <NavLink
+              className={`${
+                !show
+                  ? "nav__topCenter__list"
+                  : "nav__topCenter__list__contrast"
+              }`}
+              to="/"
+            >
               HOME
             </NavLink>
             <NavLink
-              className="nav__topCenter__list"
+              className={`${
+                !show
+                  ? "nav__topCenter__list"
+                  : "nav__topCenter__list__contrast"
+              }`}
               to="/about"
               activeStyle={activeStyle}
             >
               ABOUT
             </NavLink>
             <NavLink
-              className="nav__topCenter__list"
+              className={`${
+                !show
+                  ? "nav__topCenter__list"
+                  : "nav__topCenter__list__contrast"
+              }`}
               to="/contact"
               activeStyle={activeStyle}
             >
               CONTACT
             </NavLink>
             <NavLink
-              className="nav__topCenter__list"
+              className={`${
+                !show
+                  ? "nav__topCenter__list"
+                  : "nav__topCenter__list__contrast"
+              }`}
               to="/write"
               activeStyle={activeStyle}
             >
               WRITE
             </NavLink>
             <NavLink
-              className="nav__topCenter__list"
+              className={`${
+                !show
+                  ? "nav__topCenter__list"
+                  : "nav__topCenter__list__contrast"
+              }`}
               to="/signin"
               activeStyle={activeStyle}
             >
@@ -73,15 +114,20 @@ function Nav() {
           </ul>
         </div>
         <div className="nav__topRight">
-          <img
-            className="nav__topRight__profile"
-            src="/images/profile_img.png"
-            alt="profile_image"
+          <NavLink to="/setting" activeStyle={settingActive}>
+            <img
+              className="nav__topRight__profile"
+              src={profileImg}
+              alt="profile_image"
+            />
+          </NavLink>
+          <FaSearch
+            className={`${!show ? "react-icons" : "react-icons__contrast"}`}
+            id="search"
           />
-          <FaSearch style={{ fontSize: "18px", color: "#666" }} />
         </div>
       </div>
-    </IconContext.Provider>
+    </div>
   );
 }
 

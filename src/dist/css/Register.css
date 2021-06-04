@@ -1,0 +1,96 @@
+.register {
+  margin-top: -100px;
+  height: 105vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), color-stop(rgba(255, 255, 255, 0.5)), to(white)), url("/src/Images/signin_img.jpg") no-repeat;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), white), url("/src/Images/signin_img.jpg") no-repeat;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.register__title {
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+.register__form {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.register__form > label {
+  margin: 10px 0;
+}
+
+.register__form > input {
+  color: gray;
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.register__form > input:focus {
+  outline: none;
+}
+
+.register__form > input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.register__form > input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.register__form > input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.register__form > input:focus::placeholder {
+  color: transparent;
+}
+
+.register__form .button__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.register__form .registerBtn {
+  width: 40%;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  color: teal;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.register__form .registerBtn:hover {
+  color: white;
+  background-color: teal;
+}
+/*# sourceMappingURL=Register.css.map */
