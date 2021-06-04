@@ -13,6 +13,7 @@ import profileImg from "../Images/profile_img.png";
 
 function Nav() {
   const [show, handleShow] = useState(false);
+  const [user, setUser] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -67,7 +68,7 @@ function Nav() {
             >
               HOME
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className={`${
                 !show
                   ? "nav__topCenter__list"
@@ -88,7 +89,7 @@ function Nav() {
               activeStyle={activeStyle}
             >
               CONTACT
-            </NavLink>
+            </NavLink> */}
             <NavLink
               className={`${
                 !show
@@ -100,27 +101,31 @@ function Nav() {
             >
               WRITE
             </NavLink>
-            <NavLink
-              className={`${
-                !show
-                  ? "nav__topCenter__list"
-                  : "nav__topCenter__list__contrast"
-              }`}
-              to="/signin"
-              activeStyle={activeStyle}
-            >
-              SIGN-IN
-            </NavLink>
+            {!user && (
+              <NavLink
+                className={`${
+                  !show
+                    ? "nav__topCenter__list"
+                    : "nav__topCenter__list__contrast"
+                }`}
+                to="/signin"
+                activeStyle={activeStyle}
+              >
+                SIGN-IN
+              </NavLink>
+            )}
           </ul>
         </div>
         <div className="nav__topRight">
-          <NavLink to="/setting" activeStyle={settingActive}>
-            <img
-              className="nav__topRight__profile"
-              src={profileImg}
-              alt="profile_image"
-            />
-          </NavLink>
+          {user && (
+            <NavLink to="/setting" activeStyle={settingActive}>
+              <img
+                className="nav__topRight__profile"
+                src={profileImg}
+                alt="profile_image"
+              />
+            </NavLink>
+          )}
           <FaSearch
             className={`${!show ? "react-icons" : "react-icons__contrast"}`}
             id="search"

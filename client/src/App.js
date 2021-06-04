@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./dist/css/App.css";
 import Nav from "./Components/Nav";
 import Home from "./Pages/Home";
@@ -16,6 +17,8 @@ import {
 } from "react-router-dom";
 
 function App() {
+  const [user, setUser] = useState(false);
+
   return (
     <Router className="App">
       <Nav />
@@ -23,11 +26,11 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/write" component={Write} />
-        <Route exact path="/signin" component={Signin} />
-        <Route exact path="/register" component={Register} />
-        <Route exact path="/single" component={Single} />
-        <Route exact path="/setting" component={Setting} />
+        <Route exact path="/write" component={user ? Write : Signin} />
+        <Route exact path="/signin" component={user ? Home : Signin} />
+        <Route exact path="/register" component={user ? Home : Register} />
+        <Route exact path="/single:postId" component={Single} />
+        <Route exact path="/setting" component={user ? Setting : Signin} />
         <Redirect to="/" />
       </Switch>
     </Router>

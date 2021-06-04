@@ -77,30 +77,34 @@
           justify-content: space-between;
 }
 
-.signin__form .signinBtn, .signin__form .registerBtn {
+.signin__form .signinBtn, .signin__form .registerBtn, .signin__form .demoBtn {
   width: 40%;
   margin-top: 20px;
   cursor: pointer;
   border: none;
-  color: lightcoral;
+  color: teal;
   padding: 10px;
   border-radius: 10px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.signin__form .signinBtn:hover, .signin__form .registerBtn:hover {
+.signin__form .signinBtn:hover, .signin__form .registerBtn:hover, .signin__form .demoBtn:hover {
   color: white;
-  background-color: lightcoral;
+  background-color: teal;
 }
 
 .signin__form .registerBtn {
   width: 12vw;
-  color: teal;
+  color: lightcoral;
 }
 
 .signin__form .registerBtn:hover {
   color: white;
-  background-color: teal;
+  background-color: lightcoral;
+}
+
+.signin__form .demoBtn {
+  width: 100%;
 }
 /*# sourceMappingURL=Signin.css.map */

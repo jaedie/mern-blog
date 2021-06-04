@@ -19,6 +19,7 @@ function Signin() {
             <button className="registerBtn">Register</button>
           </Link>
         </div>
+        <button className="demoBtn">Demo Sign In</button>
       </form>
     </div>
   );

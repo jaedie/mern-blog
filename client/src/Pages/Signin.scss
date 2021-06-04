@@ -56,25 +56,30 @@
       margin-top: 20px;
       cursor: pointer;
       border: none;
-      color: lightcoral;
+      color: teal;
       padding: 10px;
       border-radius: 10px;
       transition: all 0.5s ease;
 
       &:hover {
         color: white;
-        background-color: lightcoral;
+        background-color: teal;
       }
     }
 
     .registerBtn {
       @extend .signinBtn;
       width: 12vw;
-      color: teal;
+      color: lightcoral;
       &:hover {
         color: white;
-        background-color: teal;
+        background-color: lightcoral;
       }
+    }
+
+    .demoBtn {
+      @extend .signinBtn;
+      width: 100%;
     }
   }
 }

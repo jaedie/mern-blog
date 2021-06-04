@@ -1,16 +1,13 @@
 import React from "react";
 import "../dist/css/SinglePost.css";
 import { MdDeleteForever, MdEdit } from "react-icons/md";
+import singlepostImg from "../Images/singlepost.png";
 
 function SinglePost() {
   return (
     <div className="singlepost">
       <div className="singlepost__wrap">
-        <img
-          src="/images/singlepost.png"
-          alt="single_img"
-          className="singlepost__img"
-        />
+        <img src={singlepostImg} alt="single_img" className="singlepost__img" />
         <h1 className="singlepost__title">
           Lorem ipsum dolor sit amet.
           <div className="singlepost__title__edit">
