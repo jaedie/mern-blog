@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../dist/css/Nav.css";
 import { NavLink } from "react-router-dom";
-import { IconContext } from "react-icons";
 import {
   FaGithub,
   FaInstagram,
@@ -11,9 +10,8 @@ import {
 } from "react-icons/fa";
 import profileImg from "../Images/profile_img.png";
 
-function Nav() {
+function Nav({ user, setUser }) {
   const [show, handleShow] = useState(false);
-  const [user, setUser] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -68,28 +66,6 @@ function Nav() {
             >
               HOME
             </NavLink>
-            {/* <NavLink
-              className={`${
-                !show
-                  ? "nav__topCenter__list"
-                  : "nav__topCenter__list__contrast"
-              }`}
-              to="/about"
-              activeStyle={activeStyle}
-            >
-              ABOUT
-            </NavLink>
-            <NavLink
-              className={`${
-                !show
-                  ? "nav__topCenter__list"
-                  : "nav__topCenter__list__contrast"
-              }`}
-              to="/contact"
-              activeStyle={activeStyle}
-            >
-              CONTACT
-            </NavLink> */}
             <NavLink
               className={`${
                 !show
@@ -110,6 +86,7 @@ function Nav() {
                 }`}
                 to="/signin"
                 activeStyle={activeStyle}
+                onClick={() => setUser(true)}
               >
                 SIGN-IN
               </NavLink>
@@ -129,6 +106,7 @@ function Nav() {
           <FaSearch
             className={`${!show ? "react-icons" : "react-icons__contrast"}`}
             id="search"
+            onClick={() => setUser(false)}
           />
         </div>
       </div>

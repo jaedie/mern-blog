@@ -21,7 +21,7 @@ function App() {
 
   return (
     <Router className="App">
-      <Nav />
+      <Nav user={user} setUser={setUser} />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
