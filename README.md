@@ -17,7 +17,7 @@
 - Sass
 
 <ins>***For Backend***</ins>
-![image]({https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white})
+<img src="{https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white}" />
 
 
 <a href="https://amzn-app-86035.web.app/" target="_blank" title="Amazon-app">Click Here🚀</a> for a direct link to the project.  
