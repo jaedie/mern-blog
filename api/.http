@@ -1,0 +1,12 @@
+POST http://localhost:5000/api/posts
+content-type: application/json
+
+{
+    "username": "James",
+    "title": "test",
+    "desc" : "test desc"
+
+}
+
+
+# "60bdae6bac260d2ee4b710a8"
