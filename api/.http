@@ -1,12 +1,8 @@
-POST http://localhost:5000/api/posts
+PUT http://localhost:5000/api/posts
 content-type: application/json
 
 {
     "username": "James",
-    "title": "test",
-    "desc" : "test desc"
-
+    "title": "test3",
+    "desc" : "test desc3"
 }
-
-
-# "60bdae6bac260d2ee4b710a8"
