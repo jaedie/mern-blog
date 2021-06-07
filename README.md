@@ -6,7 +6,7 @@
   - **Sign-in and out**
   - **User settings**
   - **Add/Edit/Delete posts**
-  - **Basic Validations**
+  - **User Validations**
   
 
 ## Stacks Used
