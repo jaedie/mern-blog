@@ -7,13 +7,13 @@ const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
-const cors = require("cors");
+// const cors = require("cors");
 
 mongoose.set("useFindAndModify", false);
 
 dotenv.config();
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
