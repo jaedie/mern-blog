@@ -2,13 +2,12 @@ import React from "react";
 import "../dist/css/Posts.css";
 import Post from "./Post";
 
-function Posts() {
+function Posts({ posts }) {
   return (
     <div className="posts">
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      {posts.map((post, idx) => (
+        <Post post={post} />
+      ))}
     </div>
   );
 }
