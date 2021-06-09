@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./dist/css/App.css";
 import Nav from "./Components/Nav";
 import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
 import Write from "./Pages/Write";
 import Signin from "./Pages/Signin";
 import Single from "./Pages/Single";
@@ -24,12 +22,10 @@ function App() {
       <Nav user={user} setUser={setUser} />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
         <Route exact path="/write" component={user ? Write : Signin} />
         <Route exact path="/signin" component={user ? Home : Signin} />
         <Route exact path="/register" component={user ? Home : Register} />
-        <Route exact path="/single:postId" component={Single} />
+        <Route exact path="/single/:id" component={Single} />
         <Route exact path="/setting" component={user ? Setting : Signin} />
         <Redirect to="/" />
       </Switch>
