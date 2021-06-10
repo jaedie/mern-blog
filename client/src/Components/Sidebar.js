@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../dist/css/Sidebar.css";
+import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { FaGithub, FaInstagram, FaGoogle, FaLinkedin } from "react-icons/fa";
 import sidebarImg from "../Images/sidebar_about.png";
+import axios from "axios";
 
 function Sidebar() {
-  const sidebar_list = ["Life", "Music", "Books", "Coding", "IT"];
+  const [cats, setCat] = useState([]);
+
+  useEffect(() => {
+    const getCats = async () => {
+      const res = await axios.get("/api/category");
+      setCat(res.data);
+    };
+    getCats();
+  }, []);
 
   return (
     <div className="sidebar">
@@ -24,8 +34,10 @@ function Sidebar() {
       <div className="sidebar__item">
         <span className="sidebar__item__title">CATEGORIES</span>
         <ul className="sidebar__item__lists">
-          {sidebar_list.map((list, idx) => (
-            <li key={idx}>{list}</li>
+          {cats.map((cat, idx) => (
+            <Link to={`/?cat=${cat.name}`} className="link">
+              <li key={idx}>{cat.name}</li>
+            </Link>
           ))}
         </ul>
       </div>

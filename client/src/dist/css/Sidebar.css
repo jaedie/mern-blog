@@ -65,12 +65,13 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  row-gap: 0.5rem;
-  -webkit-column-gap: 0.5rem;
-          column-gap: 0.5rem;
+  row-gap: 0.7rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  justify-items: flex-start;
 }
 
-.sidebar__item__lists > li {
+.sidebar__item__lists > .link {
   font-family: "Josefin Sans", sans-serif;
   font-style: italic;
   cursor: pointer;
